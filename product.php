@@ -1,5 +1,5 @@
 <?php 
-class prodotto{
+class Prodotto{
     public $name;
     public $price;
     public function __construct($name,$price) {

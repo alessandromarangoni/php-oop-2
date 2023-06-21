@@ -3,7 +3,7 @@ require __DIR__ .'/product.php';
 require __DIR__ .'/categories.php';
 require __DIR__ .'/kind.php';
 
-    $Croccantini_Cani_pollo = new prodotto(
+    $Croccantini_Cani_pollo = new Prodotto(
         'croccantini per cani al pollo',
         12, 
             new Categories(
@@ -13,7 +13,7 @@ require __DIR__ .'/kind.php';
                         'cibo per animali')
                         )
                     );
-$Croccantini_gatti_manzo = new prodotto(
+$Croccantini_gatti_manzo = new Prodotto(
     'croccantini per gatti al manzo',
     19, 
         new Categories(
@@ -23,7 +23,7 @@ $Croccantini_gatti_manzo = new prodotto(
                     'cibo per animali')
                     )
                 );
-$Guinzaglio = new prodotto(
+$Guinzaglio = new Prodotto(
     'guinzaglio allungabile 6 metri',
     7, 
         new Categories(
@@ -33,7 +33,7 @@ $Guinzaglio = new prodotto(
                     'accessori')
                     )
                 );
-$pollo_giocattolo = new prodotto(
+$pollo_giocattolo = new Prodotto(
     'pollo giocattolo',
     3.50, 
         new Categories(
@@ -44,7 +44,7 @@ $pollo_giocattolo = new prodotto(
                     )
                 );
 
-                $topo_giocattolo = new prodotto(
+                $topo_giocattolo = new Prodotto(
                     'topo giocattolo a rotelle',
                     5.90, 
                         new Categories(

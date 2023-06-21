@@ -15,7 +15,7 @@ require __DIR__ .'/generate_products.php';
 $productarray=[
     $Croccantini_Cani_pollo,
     $Croccantini_gatti_manzo,
-    $guinzaglio,
+    $Guinzaglio,
     $pollo_giocattolo,
     $topo_giocattolo
 ]
