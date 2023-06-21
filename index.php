@@ -8,11 +8,11 @@
     <title>pet shop</title>
 </head>
 <?php 
-require_once __DIR__ . '/product.php';
-require_once __DIR__ . '/categories.php';
-require_once __DIR__ . '/kind.php';
-require '.generate_products.php';
-$product_array=[
+require __DIR__ .'/product.php';
+require __DIR__ .'/categories.php';
+require __DIR__ .'/kind.php';
+require __DIR__ .'/generate_products.php';
+$productarray=[
     $Croccantini_Cani_pollo,
     $Croccantini_gatti_manzo,
     $guinzaglio,
@@ -24,7 +24,7 @@ $product_array=[
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-8">
-                <?php foreach ($product_array as $item) { ?>
+                <?php foreach ($productarray as $item) { ?>
                     <?php echo 'ciao' ?>
                     <?php } ?>
             </div>

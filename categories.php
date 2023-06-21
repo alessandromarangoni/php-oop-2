@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/product.php';
+require __DIR__ .'/product.php';
     class Categories extends Prodotto{
         public $categorieName;
         public $description;
