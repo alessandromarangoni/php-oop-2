@@ -1,7 +1,7 @@
 <?php
-require __DIR__ .'/product.php';
-require __DIR__ .'/categories.php';
-require __DIR__ .'/kind.php';
+require_once __DIR__ .'/product.php';
+require_once __DIR__ .'/categories.php';
+require_once __DIR__ .'/kind.php';
 
     $Croccantini_Cani_pollo = new Prodotto(
         'croccantini per cani al pollo',
