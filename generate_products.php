@@ -21,5 +21,6 @@ $productarray=[
     new Food('pedigree',7.80,$dogs,'https://cdn.shopify.com/s/files/1/0312/8826/2795/products/Untitleddesign-2020-10-16T121135.232_1200x1200.png?v=1602831068',1200),
     new Toys('sheba',3.87, $cats ,'https://cdn.shopify.com/s/files/1/0288/2152/0466/products/cibo-umido-gatto-sheba-selezione-in-salsa-85-gr-vitello-tacchino.jpg?v=1634725379',300),
     new Prodotto('cuccia',32.99, $cats ,'https://i.etsystatic.com/10382984/r/il/9a9660/4111336952/il_1588xN.4111336952_4sgd.jpg')
-]
+];
+$productarray[0]->setmaterial('stoffa');
 ?>
