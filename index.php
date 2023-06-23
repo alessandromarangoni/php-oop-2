@@ -25,6 +25,13 @@ $categorie_array=[$dogs,$cats]
 ?>
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-10 d-flex flex-wrap justify-content-between">
                 <?php foreach($productarray as $prodotto) {?>
@@ -42,7 +49,11 @@ $categorie_array=[$dogs,$cats]
                         <p><?php echo $prodotto->calories?></p>
                         <?php  } ?>
                         <?php if($prodotto instanceof Toys || $prodotto instanceof Prodotto){?>
-                                <?php echo '<p>materiale:'. $prodotto->getmaterial() ?>
+                            <p>materiale: <?php try {echo $prodotto->getmaterial();
+                                } 
+                                    catch (Exception $e){
+                                    echo "materiale non disponibile";
+                                }?>
                             <?php } echo '</p>' ?>
                         
                         <?php if ($prodotto instanceof Food) {?>

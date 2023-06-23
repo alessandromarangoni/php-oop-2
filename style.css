@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: rgb(255, 213, 135)!important;
+}
 .custom_card{
     max-width: 200px;
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 1rem;
     background-color: orange;
+    max-height: 400px;
+    overflow: auto;
 }
 .img-container{
     max-width: 80%;
