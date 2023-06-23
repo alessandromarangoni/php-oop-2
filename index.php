@@ -41,10 +41,22 @@ $categorie_array=[$dogs,$cats]
                         <?php if( $prodotto instanceof Food){ ?>
                         <p><?php echo $prodotto->calories?></p>
                         <?php  } ?>
-                        <p>materiale: <?php if($prodotto instanceof Toys || $prodotto instanceof Prodotto){?>
-                                <?php echo $prodotto->getmaterial() ?>
+                        <?php if($prodotto instanceof Toys || $prodotto instanceof Prodotto){?>
+                                <?php echo '<p>materiale:'. $prodotto->getmaterial() ?>
+                            <?php } echo '</p>' ?>
+                        
+                        <?php if ($prodotto instanceof Food) {?>
+                            <p>peso: <?php if ($prodotto instanceof Food) {?>
+                            <?php try {
+                                    echo $prodotto->getweight();
+                                } catch (RangeException $e) {
+                                    echo "peso non disponibile";
+                                } catch (Exception $e) {
+                                    echo "peso non disponibile";
+                                } ?>
                             <?php } ?>
                         </p>
+                            <?php } ?>
                         </div>
                     </div>
                 <?php } ?>
