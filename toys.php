@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ .'/product.php';
 class Toys extends Prodotto{
     public $color;
     public function __construct($name, $price, Categories $Categories, $img, $color)

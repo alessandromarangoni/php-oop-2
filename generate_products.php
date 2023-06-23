@@ -3,6 +3,7 @@ require_once __DIR__ .'/product.php';
 require_once __DIR__ .'/categories.php';
 require_once __DIR__ .'/kind.php';
 require_once __DIR__ .'/toys.php';
+// require_once __DIR__ .'/traits.php';
 //categoire
 $dogs = new Categories(
     'cani',
@@ -23,4 +24,5 @@ $productarray=[
     new Prodotto('cuccia',32.99, $cats ,'https://i.etsystatic.com/10382984/r/il/9a9660/4111336952/il_1588xN.4111336952_4sgd.jpg')
 ];
 $productarray[0]->setmaterial('stoffa');
+$productarray[3]->setmaterial('stoffa');
 ?>
